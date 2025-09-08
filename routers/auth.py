@@ -1,7 +1,7 @@
 from fastapi import APIRouter, HTTPException
 from database import supabase
 
-router = APIRouter
+router = APIRouter()
 
 @router.post("/register")
 def register(email: str, password: str, name: str):
